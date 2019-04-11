@@ -51,7 +51,7 @@ public class BukuAdapter extends ArrayAdapter<Buku> {
 
         ImageView imageView = (ImageView)convertView.findViewById(R.id.img_sampul);
         Picasso.get()
-                .load("http://192.168.1.7:8080/belajarapi/"+buku.getSampul())
+                .load("http://192.168.1.7:8080/belajarapi/public/"+buku.getSampul())
                 .into(imageView);
 
         return convertView;
